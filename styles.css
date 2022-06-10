@@ -254,11 +254,11 @@ body {
 
 
 
-/* 
+
 #dev-box {
     display: none;
     overflow: scroll;
-} */
+}
 
 @media screen and (max-width:450px) {
     #dev-box {
