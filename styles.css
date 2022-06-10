@@ -1,0 +1,327 @@
+/* TYPOGRAPHY */
+
+.w-500 {
+    font-weight: 500;
+}
+
+.w-600 {
+    font-weight: 600;
+}
+
+.w-700 {
+    font-weight: 700;
+}
+
+
+/* END TYPOGRAPHY */
+
+
+/* LINKS */
+
+.link {
+    text-decoration: none;
+}
+
+.active-link {
+    color: #2303AC;
+}
+
+/* END LINKS */
+
+
+/* COLORS */
+
+    /* BACKGROUND */
+
+.black-bg {
+    background-color: #08090A;
+}
+
+.white-bg {
+    background-color: #FFFFFF;
+}
+
+.blue-bg {
+    background-color: #2303AC;
+}
+
+
+/* TEXT */
+
+.text-white {
+    color: #FFFFFF;
+}
+
+
+
+/* END OF COLORS */
+
+
+
+
+/* GENERAL STYLES */
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* HEADER */
+
+
+#website-header {
+    text-align: center;
+    padding-top: 68px;
+}
+
+/* END HEADER */
+
+
+/* MAIN */
+
+#website-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding-top: 60px;
+    gap: 150px;
+}
+
+/* END MAIN */
+
+
+
+/* SEARCH BAR */
+
+#search-bar {
+    width: 358px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#input-holder {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px 22px;
+    gap: 22px;
+}
+
+#dev-search {
+    background-color: none;
+    border: none;
+    outline: none;
+}
+
+#go-button {
+    border: none;
+    padding: 11px 36px;
+}
+
+/* END SEARCH BAR */
+
+
+
+
+/* DEV BOX */
+
+#dev-box {
+    border-radius: 0 0;
+    width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px;
+    display: grid;
+    gap: 50px;
+}
+
+.first-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+}
+
+#dev-name {
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+#dev-git-username {
+    font-size: 1.26em;
+}
+
+.first-row-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: space-between;
+}
+
+#joined-date {
+    text-align: right;
+    color: #08090AB2;
+}
+
+#detail-box {
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr);
+    border-radius: 1em;
+    padding: 39.6px 103px;
+    gap: 10px;
+}
+
+.detail {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    gap: 11px;
+}
+
+.detail h2 {
+    font-size: 2.4em;
+}
+
+
+#other-details ul {
+    display: grid;
+    grid-template-columns: repeat( 3 , auto );
+    justify-content: space-between;
+}
+
+#other-details ul li{
+    margin-bottom: 2em;
+}
+
+#other-details ul li {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    font-size: 1.2em;
+    justify-content: center;
+    gap: 10px;
+}
+
+#other-details li img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#other-details-ul li a {
+    font-size: 0.8em;
+}
+
+#user-avatar {
+    border-radius: 50%;
+}
+
+/* END DEVBOX */
+
+
+
+/* LOADING */
+
+#loading {
+    text-align: center;
+    display: none;
+}
+
+
+/* END LOADING */
+
+
+/* ERROR */
+
+#error {
+    text-align: center;
+    display: none;
+}
+
+#error-header {
+    font-size: 2em;
+}
+
+#error-caption {
+    font-size: 1.5em;
+    margin-top: 50px;
+}
+
+
+/* END ERROR */
+
+
+
+/* 
+#dev-box {
+    display: none;
+    overflow: scroll;
+} */
+
+@media screen and (max-width:450px) {
+    #dev-box {
+        width: 100% !important;
+        padding: 25px;
+    }
+
+    #website-header img {
+        width: 250px
+    }
+
+    #search-bar {
+        width: 200px;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+
+    #input-holder img {
+        width: 15px;
+    }
+
+    #dev-search {
+        width: 100px;
+    }
+
+    #go-button {
+        width: 100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    #dev-box {
+        width: 70vw;
+    }
+
+    #dev-box .first-row {
+        grid-template-columns: auto;
+    }
+
+    #dev-box .first-row img {
+        width: 200px;
+    }
+
+    .first-row-text {
+        gap: 20px;
+    }
+
+    #detail-box {
+        justify-content: space-between;
+        padding: 39.6px 20px;
+    }
+
+    .detail h2 {
+        font-size: 1.4em;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+      #dev-box {
+          width: 70vw;
+      }
+  }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFinder</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="black-bg">
+    <header id="website-header">
+        <img src="img/dev-finder-logo.svg" alt="">
+    </header>
+
+    <main id="website-main">
+        <div id="search-bar" class="black-bg">
+            <div id="input-holder" class="white-bg">
+                <img src="img/search.svg" alt="">
+                <input type="search" name="find-dev" id="dev-search" placeholder="Type to find Dev">
+            </div>
+            <button id="go-button" class="blue-bg text-white" onclick="searchDev()"> Go </button>
+        </div>
+
+        <div id="loading">
+            <img src="img/loader.gif" alt="">
+        </div>
+
+        <div id="error" class="text-white">
+            <h1 id="error-header"> Error : User Not Found </h1>
+            <h2 id="error-caption"> Please Try Again. </h2>
+        </div>
+
+        <div id="dev-box" class="white-bg">
+            <div class="first-row">
+                <img id="user-avatar" src="img/eclipse.svg" alt="" width="161px">
+                <div class="first-row-text">
+                    <h1 id="dev-name">Github Name null</h1>
+                    <p id="dev-git-username"> <a id="git-link" class="link" target="_blank">Github Username Unavailable</a> </p>
+                    <p id="bio"> Bio null </p>
+                    <p id="joined-date" class="w-600"> -- </p>
+                </div>
+            </div>
+
+            <div id="detail-box" class="black-bg text-white">
+
+                <div id="repo" class="detail">
+                    <h2 id="repo-count"> 0 </h2>
+                    <h3> Repos </h3>
+                </div>
+
+                <div id="followers" class="detail">
+                    <h2 id="followers-count"> 0 </h2>
+                    <h3> Followers </h3>
+                </div>
+                
+                <div id="following" class="detail">
+                    <h2 id="following-count"> 0 </h2>
+                    <h3> Following </h3>
+                </div>
+            </div>
+
+            <div id="other-details">
+                <ul id="other-details-ul">
+                    <li>
+                        <img src="img/twitter.svg" alt="">
+                        <a id="twitter-link" class="link" target="_blank"> null </a>
+                    </li>
+                    <li>
+                        <img src="img/add-circle.svg" alt="">
+                        <a id="hire-status" class="link" target="_blank"> null </a>
+                    </li>
+                    <li>
+                        <img src="img/link.svg" alt="">
+                        <a id="website-link" class="link" target="_blank"> null </a>
+                    </li>
+                    <li>
+                        <img src="img/company.svg" alt="">
+                        <a id="company" class="link" target="_blank"> null </a>
+                    </li>
+                    <li>
+                        <img src="img/location.svg" alt="">
+                        <a id="location" class="link" target="_blank"> null </a>
+                    </li>
+                    <li>
+                        <img src="img/mail.svg" alt="">
+                        <a id="mail" class="link" target="_blank"> null </a>
+                    </li>
+                </ul>
+            </div>  
+
+        </div>
+    </main>
+    <script src="devFinder.js"></script>
+</body>
+</html>
